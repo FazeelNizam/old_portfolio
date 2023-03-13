@@ -1,0 +1,109 @@
+.footer {
+    padding: 40px 0 50px 0;
+    background: radial-gradient(ellipse at left bottom, #0F002B 0%, #090A0F 100%);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.footer img {
+    width: 26%;
+    margin: 0;
+}
+
+.media-icons-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -1.5rem;
+}
+
+.media-icons-footer ul li {
+    list-style: none;
+    margin-right: 18px;
+    border-radius: 30px;
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    background: transparent;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+    width: 60px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.media-icons-footer ul li::before {
+    content: '';
+    position: absolute;
+    height: 160%;
+    width: 140%;
+    top: 80%;
+    left: -120%;
+    background: rgb(0, 96, 223);
+    background: linear-gradient(90.21deg, #0F002B -5.91%, #012188 111.58%);
+    transform: rotate(45deg);
+    transition: all .4s ease-in-out;
+}
+
+.media-icons-footer ul li:hover {
+    border-width: 2.5px;
+}
+
+.media-icons-footer ul li:hover svg {
+    transition: all .2s linear;
+    transform: scale(1.3);
+    color: #fff;
+}
+
+.media-icons-footer ul li:hover::before {
+    top: -28%;
+    left: -7%;
+}
+
+.media-icons-footer ul li svg {
+    font-size: 24px;
+    color: #fefefe;
+}
+
+
+.copy-rights>hr {
+    height: 2px;
+    background: #B8B8B8;
+    border: none;
+}
+
+.copy-rights {
+    font-weight: 400;
+    font-size: 14px;
+    color: #B8B8B8;
+    letter-spacing: 0.5px;
+    margin-top: none;
+}
+
+@media screen and (max-width: 770px) {
+    .media-icons-footer ul li {
+        margin-right: 12px;
+        width: 55px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .footer img {
+        margin-left: 10px;
+    }
+
+    .media-icons-footer ul li {
+        margin: 15px 0 15px 5px;
+    }
+
+    .media-icons-footer {
+        margin-left: -40px;
+    }
+}

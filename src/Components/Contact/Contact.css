@@ -1,0 +1,131 @@
+.contact {
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    padding: 60px 0 60px 0;
+}
+
+.contact img {
+    width: 92%;
+}
+
+.contact h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.contact .contact-icon {
+    width: 100%;
+    background: rgba(6, 0, 61, 0.212);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    margin: 0 0 20px 0;
+    padding: 18px 26px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+}
+
+.contact .contact-icon a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.contact-icon:hover svg {
+    transition: all .2s linear;
+    transform: scale(1.2);
+    color: #c1cafc;
+}
+
+.contact-icon :hover {
+    transition: all .2s linear;
+    color: #c1cafc;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    margin: 0 0 8px 0;
+    padding: 18px 26px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    background: rgba(255, 255, 255, 1);
+    color: #121212;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.contact form input:focus::placeholder,
+.contact form textarea:focus::placeholder {
+    color: #121212;
+    opacity: 0.8;
+}
+
+.contact form button {
+    font-weight: 700;
+    color: #000;
+    background-color: #f7f7f7;
+    padding: 14px 48px;
+    font-size: 18px;
+    margin-top: 25px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.contact form button span {
+    z-index: 1;
+    position: relative;
+}
+
+.contact form button:hover {
+    color: #fff;
+}
+
+.contact form button::before {
+    content: "";
+    background: #121212;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.contact form button:hover::before {
+    width: 100%;
+}
+
+.animatezoomIn {
+    animation: zoomIn 0.7s;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0, 0);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
