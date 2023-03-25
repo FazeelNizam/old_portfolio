@@ -1,14 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import { IllustrationCards } from "./IllustrationCards";
 import "./Projects.css";
 import "./sky.scss";
 import "animate.css";
+import Frame from "./Frame";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
 import { projects } from "./ProjectData.js";
-import { itemData } from "./IllustrationData.js";
+import UI from "../../Assets/img/Illustrations/Breadchoice.png";
+import CGU from "../../Assets/img/Illustrations/CGUToken.jpg";
+import CRT from "../../Assets/img/Illustrations/Circuit.PNG";
+import HLX from "../../Assets/img/Illustrations/Helix.PNG";
+import D3 from "../../Assets/img/Illustrations/3D.PNG";
+import CRE5 from "../../Assets/img/Illustrations/CRE05.PNG";
+import MTR from "../../Assets/img/Illustrations/Motor.PNG";
+
+function srcset(image, size, rows = 1, cols = 1) {
+  return {
+    src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
+    srcSet: `${image}?w=${size * cols}&h=${
+      size * rows
+    }&fit=crop&auto=format&dpr=2 2x`,
+  };
+}
 
 const Projects = () => {
+  const [selectedImg, setSelectedImg] = useState(null);
   return (
     <>
       <section className="project" id="projects">
@@ -46,9 +64,44 @@ const Projects = () => {
                   </Tab.Pane>
                   <Tab.Pane eventKey="second">
                     <Row>
-                      {itemData.map((item, index) => {
-                        return <IllustrationCards key={index} {...item} />;
-                      })}
+                      <Col size={12}>
+                        <div className="gallery">
+                          <ImageList
+                            sx={{ width: 1, height: 0.7 }}
+                            variant="quilted"
+                            cols={4}
+                            rowHeight={110}
+                          >
+                            {imageData.map((item) => (
+                              <ImageListItem
+                                key={item.img}
+                                cols={item.cols || 1}
+                                rows={item.rows || 1}
+                                layoutId={item.id}
+                              >
+                                <img
+                                  className="gallery-img"
+                                  {...srcset(
+                                    item.img,
+                                    121,
+                                    item.rows,
+                                    item.cols
+                                  )}
+                                  alt={item.title}
+                                  loading="lazy"
+                                  onClick={() => setSelectedImg(item.img)}
+                                />
+                              </ImageListItem>
+                            ))}
+                          </ImageList>
+                          {selectedImg && (
+                            <Frame
+                              selectedImg={selectedImg}
+                              setSelectedImg={setSelectedImg}
+                            />
+                          )}
+                        </div>
+                      </Col>
                     </Row>
                   </Tab.Pane>
                 </Tab.Content>
@@ -60,5 +113,56 @@ const Projects = () => {
     </>
   );
 };
+
+const imageData = [
+  {
+    id: 1,
+    img: UI,
+    title: "Breakfast",
+    rows: 2.5,
+    cols: 4,
+  },
+  {
+    id: 2,
+    img: MTR,
+    title: "Hats",
+    cols: 1,
+  },
+  {
+    id: 3,
+    img: CGU,
+    title: "Honey",
+    rows: 2,
+    cols: 3,
+  },
+  {
+    id: 4,
+    img: HLX,
+    title: "Burger",
+    rows: 2,
+    cols: 1,
+  },
+  {
+    id: 5,
+    img: CRE5,
+    title: "Burger",
+    rows: 2,
+    cols: 1,
+  },
+  {
+    id: 6,
+    img: CRT,
+    title: "Burger",
+    rows: 2,
+    cols: 2,
+  },
+  {
+    id: 7,
+    img: D3,
+    title: "Burger",
+    rows: 1,
+    cols: 1,
+  },
+];
 
 export default Projects;
