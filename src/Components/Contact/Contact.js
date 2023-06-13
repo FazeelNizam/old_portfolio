@@ -1,8 +1,7 @@
 import React from 'react'
 import { useState, useRef } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import { RiMessengerLine } from 'react-icons/ri'
-import { RiWhatsappLine } from 'react-icons/ri'
+import { RiMessengerLine, RiWhatsappLine } from 'react-icons/ri'
 import contactImg from '../../Assets/img/contact-img.svg'
 import './Contact.css'
 import 'animate.css'
@@ -92,9 +91,9 @@ const Contact = () => {
 
   return (
     <>
-      <section className='contact' id='contact'>
+      <section className="contact" id="contact">
         <Container>
-          <Row className='align-items-center'>
+          <Row className="align-items-center">
             <Col size={12} md={6}>
               <TrackVisibility>
                 {({ isVisible }) => (
@@ -103,7 +102,7 @@ const Contact = () => {
                       isVisible ? 'animate__animated animatezoomIn' : ''
                     }
                     src={contactImg}
-                    alt='Contact Us'
+                    alt="Contact Us"
                   />
                 )}
               </TrackVisibility>
@@ -112,18 +111,18 @@ const Contact = () => {
               <h2>Get In Touch</h2>
               <Row>
                 <Col>
-                  <div className='contact-icon'>
-                    <a href='http://m.me/FazeelNizam00' target='_blank'>
+                  <div className="contact-icon">
+                    <a href="http://m.me/FazeelNizam00" target="_blank">
                       <RiMessengerLine size={25} />
                       <span>Messanger</span>
                     </a>
                   </div>
                 </Col>
                 <Col>
-                  <div className='contact-icon'>
+                  <div className="contact-icon">
                     <a
-                      href='https://api.whatsapp.com/send?phone=+94768114000'
-                      target='_blank'
+                      href="https://api.whatsapp.com/send?phone=+94768114000"
+                      target="_blank"
                     >
                       <RiWhatsappLine size={25} />
                       <span>Whatsapp</span>
@@ -133,60 +132,60 @@ const Contact = () => {
               </Row>
               <form onSubmit={handleSubmit} ref={form}>
                 <Row>
-                  <Col size={12} sm={6} className='px-1'>
+                  <Col size={12} sm={6} className="px-1">
                     <input
-                      type='text'
-                      name='firstname'
+                      type="text"
+                      name="firstname"
                       value={formDetails.firstName}
-                      placeholder='First Name'
+                      placeholder="First Name"
                       onChange={(e) =>
                         onFormUpdate('firstName', e.target.value)
                       }
                     />
-                    <span className='text-danger'>{formError.firstName} </span>
+                    <span className="text-danger">{formError.firstName} </span>
                   </Col>
-                  <Col size={12} sm={6} className='px-1'>
+                  <Col size={12} sm={6} className="px-1">
                     <input
-                      type='text'
-                      name='lastname'
+                      type="text"
+                      name="lastname"
                       value={formDetails.lastName}
-                      placeholder='Last Name'
+                      placeholder="Last Name"
                       onChange={(e) => onFormUpdate('lastName', e.target.value)}
                     />
-                    <span className='text-danger'>{formError.lastName} </span>
+                    <span className="text-danger">{formError.lastName} </span>
                   </Col>
-                  <Col size={12} sm={6} className='px-1'>
+                  <Col size={12} sm={6} className="px-1">
                     <input
-                      type='email'
-                      name='email'
+                      type="email"
+                      name="email"
                       value={formDetails.email}
-                      placeholder='Email Address'
+                      placeholder="Email Address"
                       onChange={(e) => onFormUpdate('email', e.target.value)}
                     />
-                    <span className='text-danger'>{formError.email} </span>
+                    <span className="text-danger">{formError.email} </span>
                   </Col>
-                  <Col size={12} sm={6} className='px-1'>
+                  <Col size={12} sm={6} className="px-1">
                     <input
-                      type='tel'
-                      name='tel'
+                      type="tel"
+                      name="tel"
                       value={formDetails.phone}
-                      placeholder='Phone No.'
+                      placeholder="Phone No."
                       onChange={(e) => onFormUpdate('phone', e.target.value)}
                     />
-                    <span className='text-danger'>{formError.phone} </span>
+                    <span className="text-danger">{formError.phone} </span>
                   </Col>
-                  <Col size={12} className='px-1'>
+                  <Col size={12} className="px-1">
                     <textarea
-                      rows='6'
-                      name='message'
+                      rows="6"
+                      name="message"
                       value={formDetails.message}
-                      placeholder='Message'
+                      placeholder="Message"
                       onChange={(e) => onFormUpdate('message', e.target.value)}
                     ></textarea>
-                    <span className='text-danger'>{formError.message} </span>
+                    <span className="text-danger">{formError.message} </span>
 
                     <Col size={12}>
-                      <button type='submit' value='Send'>
+                      <button type="submit" value="Send">
                         <span>{buttonText}</span>
                       </button>
                     </Col>

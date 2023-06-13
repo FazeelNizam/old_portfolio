@@ -1,12 +1,11 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import logo from "../../Assets/img/logo.png";
-import { ImFacebook } from "react-icons/im";
-import { ImLinkedin2 } from "react-icons/im";
-import { FiGithub } from "react-icons/fi";
-import "./Footer.css";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import logo from '../../Assets/img/logo.png'
+import { ImFacebook, ImLinkedin2 } from 'react-icons/im'
+import { FiGithub } from 'react-icons/fi'
+import './Footer.css'
 
-import "../Projects/sky.scss";
+import '../Projects/sky.scss'
 
 const Footer = () => {
   return (
@@ -59,7 +58,7 @@ const Footer = () => {
         </Container>
       </footer>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

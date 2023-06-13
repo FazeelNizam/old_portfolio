@@ -1,63 +1,62 @@
-import React, { useEffect, useState } from "react";
-import { ImFacebook } from "react-icons/im";
-import { ImLinkedin2 } from "react-icons/im";
-import { FiGithub } from "react-icons/fi";
-import { BiHomeAlt2 } from "react-icons/bi";
-import { GiSkills } from "react-icons/gi";
-import { AiOutlineProject } from "react-icons/ai";
-import { TbDeviceMobileMessage } from "react-icons/tb";
-import logo from "../../Assets/img/logo.png";
-import "./Navbar.css";
+import React, { useEffect, useState } from 'react'
+import { ImFacebook, ImLinkedin2 } from 'react-icons/im'
+import { FiGithub } from 'react-icons/fi'
+import { BiHomeAlt2 } from 'react-icons/bi'
+import { GiSkills } from 'react-icons/gi'
+import { AiOutlineProject } from 'react-icons/ai'
+import { TbDeviceMobileMessage } from 'react-icons/tb'
+import logo from '../../Assets/img/logo.png'
+import './Navbar.css'
 
 const NavBar = () => {
-  const [activeLink, setActiveLink] = useState("home");
-  const [scrolled, setScrolled] = useState(false);
+  const [activeLink, setActiveLink] = useState('home')
+  const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
     const onScroll = () => {
-      const homeSection = document.querySelector("#home");
-      const skillsSection = document.querySelector("#skills");
-      const projectsSection = document.querySelector("#projects");
-      const contactSection = document.querySelector("#contact");
+      const homeSection = document.querySelector('#home')
+      const skillsSection = document.querySelector('#skills')
+      const projectsSection = document.querySelector('#projects')
+      const contactSection = document.querySelector('#contact')
 
-      const homeOffset = homeSection.offsetTop - 200;
-      const skillsOffset = skillsSection.offsetTop - 200;
-      const projectsOffset = projectsSection.offsetTop - 200;
-      const contactOffset = contactSection.offsetTop - 200;
+      const homeOffset = homeSection.offsetTop - 200
+      const skillsOffset = skillsSection.offsetTop - 200
+      const projectsOffset = projectsSection.offsetTop - 200
+      const contactOffset = contactSection.offsetTop - 200
 
       if (window.scrollY >= homeOffset && window.scrollY < skillsOffset) {
-        setActiveLink("home");
+        setActiveLink('home')
       } else if (
         window.scrollY >= skillsOffset &&
         window.scrollY < projectsOffset
       ) {
-        setActiveLink("skills");
+        setActiveLink('skills')
       } else if (
         window.scrollY >= projectsOffset &&
         window.scrollY < contactOffset
       ) {
-        setActiveLink("projects");
+        setActiveLink('projects')
       } else if (window.scrollY >= contactOffset) {
-        setActiveLink("contact");
+        setActiveLink('contact')
       }
 
       if (window.scrollY > 50) {
-        setScrolled(true);
+        setScrolled(true)
       } else {
-        setScrolled(false);
+        setScrolled(false)
       }
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    }
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-  };
+    setActiveLink(value)
+  }
   return (
     <>
       <nav>
-        <div class="navbar" className={scrolled ? "navbar scrolled" : "navbar"}>
+        <div class="navbar" className={scrolled ? 'navbar scrolled' : 'navbar'}>
           <div class="logo">
             <img className="logo-img" src={logo} alt="Logo" />
           </div>
@@ -66,9 +65,9 @@ const NavBar = () => {
               <a
                 href="#home"
                 className={
-                  activeLink === "home" ? "active navbar-link" : "navbar-link"
+                  activeLink === 'home' ? 'active navbar-link' : 'navbar-link'
                 }
-                onClick={() => onUpdateActiveLink("home")}
+                onClick={() => onUpdateActiveLink('home')}
               >
                 <div className="icon">
                   <BiHomeAlt2 size={25} />
@@ -82,9 +81,9 @@ const NavBar = () => {
               <a
                 href="#skills"
                 className={
-                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
+                  activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'
                 }
-                onClick={() => onUpdateActiveLink("skills")}
+                onClick={() => onUpdateActiveLink('skills')}
               >
                 <div className="icon">
                   <GiSkills size={25} />
@@ -98,11 +97,11 @@ const NavBar = () => {
               <a
                 href="#projects"
                 className={
-                  activeLink === "projects"
-                    ? "active navbar-link"
-                    : "navbar-link"
+                  activeLink === 'projects'
+                    ? 'active navbar-link'
+                    : 'navbar-link'
                 }
-                onClick={() => onUpdateActiveLink("projects")}
+                onClick={() => onUpdateActiveLink('projects')}
               >
                 <div className="icon">
                   <AiOutlineProject size={24} />
@@ -116,11 +115,11 @@ const NavBar = () => {
               <a
                 href="#contact"
                 className={
-                  activeLink === "contact"
-                    ? "active navbar-link"
-                    : "navbar-link"
+                  activeLink === 'contact'
+                    ? 'active navbar-link'
+                    : 'navbar-link'
                 }
-                onClick={() => onUpdateActiveLink("contact")}
+                onClick={() => onUpdateActiveLink('contact')}
               >
                 <div className="icon">
                   <TbDeviceMobileMessage size={24} />
@@ -159,7 +158,7 @@ const NavBar = () => {
         </div>
       </nav>
     </>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar
