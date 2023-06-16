@@ -26,10 +26,7 @@ const Footer = () => {
               <div class="media-icons-footer">
                 <ul>
                   <li>
-                    <a
-                      href="https://www.linkedin.com/in/fazeelnizam/"
-                      target="_blank"
-                    >
+                    <a href="#">
                       <ImLinkedin2 size={20} />
                     </a>
                   </li>

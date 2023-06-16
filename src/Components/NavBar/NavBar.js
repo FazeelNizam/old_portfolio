@@ -133,10 +133,7 @@ const NavBar = () => {
           <div class="media-icons">
             <ul>
               <li>
-                <a
-                  href="https://www.linkedin.com/in/fazeelnizam/"
-                  target="_blank"
-                >
+                <a href="#">
                   <ImLinkedin2 size={20} />
                 </a>
               </li>
