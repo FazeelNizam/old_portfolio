@@ -1,15 +1,15 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper";
-import ProgressBar from "react-animated-progress-bar";
-import { TbFileDownload } from "react-icons/tb";
-import CV from "../../Assets/cv/Fazeel_CV.pdf";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, Navigation } from 'swiper'
+import ProgressBar from 'react-animated-progress-bar'
+import { TbFileDownload } from 'react-icons/tb'
+import CV from '../../Assets/cv/Fazeel_Nizam_CV.pdf'
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/navigation";
-import "./Skills.css";
+import 'swiper/css'
+import 'swiper/css/free-mode'
+import 'swiper/css/navigation'
+import './Skills.css'
 
 const Skills = () => {
   return (
@@ -60,9 +60,9 @@ const Skills = () => {
                         trackBorderColor="none"
                         hollowBackgroundColor="transparent"
                         defColor={{
-                          fair: "orangered",
-                          good: "#00A1C7",
-                          excellent: "#012188",
+                          fair: 'orangered',
+                          good: '#00A1C7',
+                          excellent: '#012188',
                         }}
                       />
                     </div>
@@ -79,9 +79,9 @@ const Skills = () => {
                         trackBorderColor="none"
                         hollowBackgroundColor="transparent"
                         defColor={{
-                          fair: "orangered",
-                          good: "#00A1C7",
-                          excellent: "#012188",
+                          fair: 'orangered',
+                          good: '#00A1C7',
+                          excellent: '#012188',
                         }}
                       />
                     </div>
@@ -98,9 +98,9 @@ const Skills = () => {
                         trackBorderColor="none"
                         hollowBackgroundColor="transparent"
                         defColor={{
-                          fair: "orangered",
-                          good: "#3f8304",
-                          excellent: "#012188",
+                          fair: 'orangered',
+                          good: '#3f8304',
+                          excellent: '#012188',
                         }}
                       />
                     </div>
@@ -117,9 +117,9 @@ const Skills = () => {
                         trackBorderColor="none"
                         hollowBackgroundColor="transparent"
                         defColor={{
-                          fair: "orangered",
-                          good: "#00A1C7",
-                          excellent: "#012188",
+                          fair: 'orangered',
+                          good: '#00A1C7',
+                          excellent: '#012188',
                         }}
                       />
                     </div>
@@ -136,9 +136,9 @@ const Skills = () => {
                         trackBorderColor="none"
                         hollowBackgroundColor="transparent"
                         defColor={{
-                          fair: "orangered",
-                          good: "#3f8304",
-                          excellent: "#012188",
+                          fair: 'orangered',
+                          good: '#3f8304',
+                          excellent: '#012188',
                         }}
                       />
                     </div>
@@ -155,9 +155,9 @@ const Skills = () => {
                         trackBorderColor="none"
                         hollowBackgroundColor="transparent"
                         defColor={{
-                          fair: "orangered",
-                          good: "#00A1C7",
-                          excellent: "#012188",
+                          fair: 'orangered',
+                          good: '#00A1C7',
+                          excellent: '#012188',
                         }}
                       />
                     </div>
@@ -174,9 +174,9 @@ const Skills = () => {
                         trackBorderColor="none"
                         hollowBackgroundColor="transparent"
                         defColor={{
-                          fair: "orangered",
-                          good: "#3f8304",
-                          excellent: "#012188",
+                          fair: 'orangered',
+                          good: '#3f8304',
+                          excellent: '#012188',
                         }}
                       />
                     </div>
@@ -189,7 +189,7 @@ const Skills = () => {
         </Container>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills

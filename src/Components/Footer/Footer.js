@@ -26,7 +26,7 @@ const Footer = () => {
               <div class="media-icons-footer">
                 <ul>
                   <li>
-                    <a href="#">
+                    <a href="#https://www.linkedin.com/in/fazeel-nizam/">
                       <ImLinkedin2 size={20} />
                     </a>
                   </li>
