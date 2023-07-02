@@ -1,6 +1,6 @@
-import { Col } from "react-bootstrap";
-import { BsCodeSlash } from "react-icons/bs";
-import { RiSlideshow2Line } from "react-icons/ri";
+import { Col } from 'react-bootstrap'
+import { BsCodeSlash } from 'react-icons/bs'
+import { RiSlideshow2Line } from 'react-icons/ri'
 
 export const ProjectCard = ({
   title,
@@ -17,15 +17,15 @@ export const ProjectCard = ({
           <h4>{title}</h4>
           <span>{description}</span>
           <div>
-            <a href={linksrc}>
+            <a href={linksrc} target="_blank">
               <BsCodeSlash /> Code
             </a>
-            <a href={linkdemo}>
+            <a href={linkdemo} target="_blank">
               <RiSlideshow2Line /> Demo
             </a>
           </div>
         </div>
       </div>
     </Col>
-  );
-};
+  )
+}
