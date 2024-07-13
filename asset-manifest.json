@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/oldportfolio/static/css/main.6a702159.css",
+    "main.js": "/oldportfolio/static/js/main.a72d9e3f.js",
+    "static/media/CGUToken.jpg": "/oldportfolio/static/media/CGUToken.47a5263d1e819e5698f4.jpg",
+    "static/media/Breadchoice.png": "/oldportfolio/static/media/Breadchoice.b38b4680b936a373c806.png",
+    "static/media/svp.png": "/oldportfolio/static/media/svp.5a0bb93a6e805630f75b.png",
+    "static/media/header.jpg": "/oldportfolio/static/media/header.6d8c71592ada91cd4fef.jpg",
+    "static/media/youtube.png": "/oldportfolio/static/media/youtube.8d0acbc31324295eef45.png",
+    "static/media/Fazeel_Nizam_CV.pdf": "/oldportfolio/static/media/Fazeel_Nizam_CV.dcb4c3715925519e3d38.pdf",
+    "static/media/foodie.PNG": "/oldportfolio/static/media/foodie.c2c8a6f298c121d7e849.PNG",
+    "static/media/header.svg": "/oldportfolio/static/media/header.84bf93eb20488a753440bf83d27db7bb.svg",
+    "static/media/agency.png": "/oldportfolio/static/media/agency.d652d59f06849fea3e9e.png",
+    "static/media/amazon.png": "/oldportfolio/static/media/amazon.c9df973a437bb8ca645c.png",
+    "static/media/CentraNo2-Bold.ttf": "/oldportfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/oldportfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/oldportfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/Motor.PNG": "/oldportfolio/static/media/Motor.17d9a414704de8000940.PNG",
+    "static/media/Circuit.PNG": "/oldportfolio/static/media/Circuit.0677f59dca0379be0336.PNG",
+    "static/media/CRE05.PNG": "/oldportfolio/static/media/CRE05.4f45b78119c2659d703f.PNG",
+    "static/media/contact-img.svg": "/oldportfolio/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
+    "static/media/3D.PNG": "/oldportfolio/static/media/3D.583cde53dec74deb5811.PNG",
+    "static/media/Skillsbg.jpg": "/oldportfolio/static/media/Skillsbg.f899b7313629471c22d6.jpg",
+    "static/media/Helix.PNG": "/oldportfolio/static/media/Helix.519859b9ec8aa1a8db82.PNG",
+    "index.html": "/oldportfolio/index.html",
+    "main.6a702159.css.map": "/oldportfolio/static/css/main.6a702159.css.map",
+    "main.a72d9e3f.js.map": "/oldportfolio/static/js/main.a72d9e3f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a702159.css",
+    "static/js/main.a72d9e3f.js"
+  ]
+}
